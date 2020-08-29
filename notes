@@ -1,0 +1,23 @@
+html: contents
+css: format, presentation
+
+special chars: <meta charset="utf-8"/>
+
+head: not visible to user
+  title
+  <!-- comments (visible to everyone)-->
+body: visible
+  <p>  paragraph <\p>
+  <br/> is a line break
+  <h1 (big) to h6 (small) > </h1>
+  <em> <\em>
+  <strong> <\strong>
+  <mark> <\mark>
+
+  <ul> unordered list
+  <ol> ordered
+  <li>: element of list
+
+  <a> href="real link">Name</a>
+  add anchor points (id) to use with href to move around within page
+  <img \>

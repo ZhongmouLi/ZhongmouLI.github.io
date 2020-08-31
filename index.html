@@ -3,6 +3,27 @@
 	<head>
 		<title>My Personal Webpage</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			
+			/* Create two equal columns that floats next to each other */
+			.column {
+			  float: left;
+			  width: 50%;
+			  padding: 10px;
+			  /*height: 300px;  Should be removed. Only for demonstration */
+			}
+			
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			</style>
+
 	</head>
 	<body>
 		<nav>
@@ -17,8 +38,38 @@
 		</nav>
 		<div class="container">
     		<div class="blurb">
-				<h1>Zhongmou LI</h1>
-				<p>I am Ph.D student in <em>Aerial Manipulation Robots</em> <a href="/about">Read more about my life...</a></p>
+				<div class="row">
+					<div class="column">
+						<h1>Zhongmou LI</h1>
+						<p>Roboticien in Aerial Robots</p>
+					</div>
+					<div class="column">
+						<img src="LI.jpg" alt="Girl in a jacket" width=50% height=auto> 
+					</div>
+				  </div>
+				
+				<p>I am a Ph.D student working at <a href = "https://www.ls2n.fr">LS2N</a> and <a href = "https://www.ec-nantes.fr">Ecole Centrale de Nantes</a>, in the <a href = "https://www.ls2n.fr/equipe/armen/ARMEN">ARMEN</a> team.   </p>
+				
+				<p> As a roboticien (robotic researcher), my research interets inlude
+
+					<ol>
+						<li style="font-size:20px" ><em>Aerial Manipulation Robots</em></li>
+						<li style="font-size:20px"><em>Quadrotors</em></li>
+					
+					</ol> 					 
+				</p>
+				<p>
+					and associated areas	
+					<ol> 
+						<li style="font-size:20px"><em >Kinematic and Dynamic Modeling</em></li>
+						<li style="font-size:20px" ><em>Model Predictive Control</em></li>
+						<li style="font-size:20px" ><em>Control Allocation</em></li>
+						<li style="font-size:20px"><em>Application of Control in real-time robot experiments</em></li>
+					</ol> 
+				</p>
+
+				<p>More research infor will be found <a href="reseach/index.html">here</a>. </p>
+
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 
